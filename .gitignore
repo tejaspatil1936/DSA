@@ -1,0 +1,18 @@
+# Ignore compiled files
+*.o
+*.out
+*.exe
+*.obj
+*.bin
+*.a
+*.so
+*.dll
+
+# Ignore CMake & build directories
+CMakeCache.txt
+CMakeFiles/
+build/
+dist/
+
+# Ignore executables (Linux/Mac)
+d0p0_TwoSum
