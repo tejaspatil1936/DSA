@@ -13,6 +13,15 @@ CMakeCache.txt
 CMakeFiles/
 build/
 dist/
+# Ignore everything
+*
 
-# Ignore executables (Linux/Mac)
-d0p0_TwoSum
+# Allow C++ source/header files
+!*.cpp
+!*.h
+!*.hpp
+
+# Allow the LeetCode directory and its contents
+!LeetCode/
+!LeetCode/**
+
