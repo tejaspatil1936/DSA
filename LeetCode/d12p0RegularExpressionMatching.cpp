@@ -50,10 +50,10 @@ int main()
     string s4 = "mississippi", p4 = "mis*is*p*.";
 
     cout << boolalpha;
-    cout << "Test 1: " << solution.isMatch(s1, p1) << endl; 
-    cout << "Test 2: " << solution.isMatch(s2, p2) << endl; 
-    cout << "Test 3: " << solution.isMatch(s3, p3) << endl; 
-    cout << "Test 4: " << solution.isMatch(s4, p4) << endl; 
+    cout << "Test 1: " << solution.isMatch(s1, p1) << endl;
+    cout << "Test 2: " << solution.isMatch(s2, p2) << endl;
+    cout << "Test 3: " << solution.isMatch(s3, p3) << endl;
+    cout << "Test 4: " << solution.isMatch(s4, p4) << endl;
 
     return 0;
 }
