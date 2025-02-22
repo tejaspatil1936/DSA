@@ -56,7 +56,6 @@ public:
     }
 };
 
-// Example usage
 int main()
 {
     Solution sol;
