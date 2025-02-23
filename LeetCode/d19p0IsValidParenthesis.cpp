@@ -36,9 +36,9 @@ public:
 int main()
 {
     Solution sol;
-    cout << sol.isValid("()") << endl;     
-    cout << sol.isValid("()[]{}") << endl; 
-    cout << sol.isValid("(]") << endl;     
-    cout << sol.isValid("([)]") << endl;   
+    cout << sol.isValid("()") << endl;
+    cout << sol.isValid("()[]{}") << endl;
+    cout << sol.isValid("(]") << endl;
+    cout << sol.isValid("([)]") << endl;
     return 0;
 }
