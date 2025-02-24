@@ -62,7 +62,7 @@ int main()
     Solution sol;
     ListNode *mergedList = sol.mergeTwoLists(list1, list2);
 
-    printList(mergedList); 
+    printList(mergedList);
 
     return 0;
 }
