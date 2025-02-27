@@ -8,20 +8,17 @@ class Solution
 public:
     void backtrack(int openCount, int closeCount, int n, string current, vector<string> &result)
     {
-        // Base case: If the length of the current string is 2*n, add to result
         if (current.length() == 2 * n)
         {
             result.push_back(current);
             return;
         }
 
-        // Add '(' if we haven't used all 'n' open parentheses
         if (openCount < n)
         {
             backtrack(openCount + 1, closeCount, n, current + "(", result);
         }
 
-        // Add ')' if closeCount is less than openCount
         if (closeCount < openCount)
         {
             backtrack(openCount, closeCount + 1, n, current + ")", result);
@@ -36,7 +33,6 @@ public:
     }
 };
 
-// **Driver Code**
 int main()
 {
     Solution sol;
