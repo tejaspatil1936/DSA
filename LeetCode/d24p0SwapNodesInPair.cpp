@@ -4,7 +4,8 @@ using namespace std;
 /**
  * Definition for singly-linked list.
  */
-struct ListNode {
+struct ListNode
+{
     int val;
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
@@ -13,16 +14,19 @@ struct ListNode {
 };
 
 // Solution class with swapPairs function
-class Solution {
+class Solution
+{
 public:
-    ListNode* swapPairs(ListNode* head) {
+    ListNode *swapPairs(ListNode *head)
+    {
         ListNode dummy(0);
         dummy.next = head;
-        ListNode* prev = &dummy;
+        ListNode *prev = &dummy;
 
-        while (head && head->next) {
-            ListNode* first = head;
-            ListNode* second = head->next;
+        while (head && head->next)
+        {
+            ListNode *first = head;
+            ListNode *second = head->next;
 
             // Swapping adjacent nodes
             prev->next = second;
@@ -39,13 +43,16 @@ public:
 };
 
 // Function to create a linked list from an array
-ListNode* createLinkedList(int arr[], int size) {
-    if (size == 0) return nullptr;
+ListNode *createLinkedList(int arr[], int size)
+{
+    if (size == 0)
+        return nullptr;
 
-    ListNode* head = new ListNode(arr[0]);
-    ListNode* current = head;
-    
-    for (int i = 1; i < size; i++) {
+    ListNode *head = new ListNode(arr[0]);
+    ListNode *current = head;
+
+    for (int i = 1; i < size; i++)
+    {
         current->next = new ListNode(arr[i]);
         current = current->next;
     }
@@ -54,8 +61,10 @@ ListNode* createLinkedList(int arr[], int size) {
 }
 
 // Function to print a linked list
-void printLinkedList(ListNode* head) {
-    while (head) {
+void printLinkedList(ListNode *head)
+{
+    while (head)
+    {
         cout << head->val << " -> ";
         head = head->next;
     }
@@ -63,18 +72,19 @@ void printLinkedList(ListNode* head) {
 }
 
 // Driver function
-int main() {
+int main()
+{
     int arr[] = {1, 2, 3, 4};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     // Create linked list
-    ListNode* head = createLinkedList(arr, size);
+    ListNode *head = createLinkedList(arr, size);
     cout << "Original List: ";
     printLinkedList(head);
 
     // Swap pairs
     Solution solution;
-    ListNode* swappedHead = solution.swapPairs(head);
+    ListNode *swappedHead = solution.swapPairs(head);
 
     // Print swapped list
     cout << "Swapped List: ";
